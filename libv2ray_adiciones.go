@@ -7,10 +7,10 @@ import (
 	"fmt"
 	"strings"
 
+	v2serial "github.com/JotchuaDevz/xray-core/infra/conf/serial"
 	"github.com/dev7dev/uri-to-json/pkgs/outbound"
 	"github.com/dev7dev/uri-to-json/pkgs/parser"
 	"github.com/dev7dev/uri-to-json/pkgs/utils"
-	v2serial "github.com/xtls/xray-core/infra/conf/serial"
 )
 
 func TestConfig(ConfigureFileContent string) error {
@@ -24,7 +24,7 @@ func getOutboundJSONIntended(oStr string) string {
 	if err != nil {
 		return oStr
 	}
-	return string(out.Bytes())
+	return out.String()
 }
 
 func getVMESSUriAttrs(oStr string) string {
