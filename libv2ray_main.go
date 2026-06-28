@@ -15,16 +15,16 @@ import (
 	"sync"
 	"time"
 
-	coreapplog "github.com/JotchuaDevz/xray-core/app/log"
-	corecommlog "github.com/JotchuaDevz/xray-core/common/log"
-	corenet "github.com/JotchuaDevz/xray-core/common/net"
-	corefilesystem "github.com/JotchuaDevz/xray-core/common/platform/filesystem"
-	"github.com/JotchuaDevz/xray-core/common/serial"
-	core "github.com/JotchuaDevz/xray-core/core"
-	corestats "github.com/JotchuaDevz/xray-core/features/stats"
-	coreserial "github.com/JotchuaDevz/xray-core/infra/conf/serial"
-	_ "github.com/JotchuaDevz/xray-core/main/distro/all"
-	browser_dialer "github.com/JotchuaDevz/xray-core/transport/internet/browser_dialer"
+	coreapplog "github.com/xtls/xray-core/app/log"
+	corecommlog "github.com/xtls/xray-core/common/log"
+	corenet "github.com/xtls/xray-core/common/net"
+	corefilesystem "github.com/xtls/xray-core/common/platform/filesystem"
+	"github.com/xtls/xray-core/common/serial"
+	core "github.com/xtls/xray-core/core"
+	corestats "github.com/xtls/xray-core/features/stats"
+	coreserial "github.com/xtls/xray-core/infra/conf/serial"
+	_ "github.com/xtls/xray-core/main/distro/all"
+	browser_dialer "github.com/xtls/xray-core/transport/internet/browser_dialer"
 	mobasset "golang.org/x/mobile/asset"
 )
 
@@ -232,7 +232,7 @@ func MeasureOutboundDelay(ConfigureFileContent string, url string) (int64, error
 
 // CheckVersionX returns the library and Xray versions
 func CheckVersionX() string {
-	return fmt.Sprintf("Lib v%d, Xray-core v%s, Jotchua", libVersion, core.Version())
+	return fmt.Sprintf("Lib v%d, Xray-core v%s JotchuaDevz", libVersion, core.Version())
 }
 
 // ReconcileBrowserDialer updates the browser dialer address and reloads its configuration
