@@ -3,7 +3,7 @@ module github.com/JotchuaDevz/AndroidLibXrayLiteJT
 go 1.26
 
 require (
-	github.com/JotchuaDevz/xray-core v0.0.10
+	github.com/JotchuaDevz/xray-core v0.0.11
 	github.com/apernet/quic-go v0.59.1-0.20260425001925-6c6cc9bcb716
 	github.com/dev7dev/uri-to-json v0.0.0-20240528114356-f8873932b519
 	golang.org/x/mobile v0.0.0-20260529142300-ecb4cd65260a
